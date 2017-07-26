@@ -12,6 +12,10 @@ function MenuRouter(){
                         </li>
 
                         <li>
+                            <a href="/topics/RenderingPractice/exercise/exercise.html">Rendering Practice</a>
+                        </li>
+
+                        <li>
                             <a href="/topics/1_Components/exercise/exercise.html">1. Components</a>
                         </li>
                         <li>
