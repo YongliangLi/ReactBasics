@@ -20,7 +20,7 @@ function ProductFiltering({onFilterClick}){
     );
 }
 
-ProductFiltering.PropTypes = {
+ProductFiltering.propTypes = {
     onFilterClick: PropTypes.func.isRequired
 }
 

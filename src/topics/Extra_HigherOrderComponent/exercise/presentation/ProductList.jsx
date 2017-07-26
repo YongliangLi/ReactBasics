@@ -14,7 +14,7 @@ function ProductList({onAddClick, products}){
     );
 }
 
-ProductList.PropTypes = {
+ProductList.propTypes = {
     onAddClick: PropTypes.func.isRequired,
     products: PropTypes.arrayOf(
         PropTypes.shape({

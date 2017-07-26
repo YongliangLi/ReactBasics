@@ -23,7 +23,7 @@ function ProductSummary({onClick, name, sku}){
     );
 }
 
-ProductSummary.PropTypes = {
+ProductSummary.propTypes = {
     onClick: PropTypes.func.isRequired,
     name: PropTypes.string.isRequired,
     sku: PropTypes.string.isRequired
