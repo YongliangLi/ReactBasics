@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="shortcut icon" href="/public/favicon.ico">
+
+    <title>JavaScript Overview</title>
+</head>
+<body>
+    <div id="banner"></div>
+    <div class="content">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <h3 class="text-center" style="text-decoration: underline">Javascript Overview</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div><h5><b>Difference between "var", "let", and "const"</b></h5></div>
+                <p>
+                    let and const use "block scope", which is found to be more comfortable to people. Use const when you can unless the
+                    value is planning on being reassigned later.
+                </p>
+                <pre>
+                    <code>
+var varTotal = 0;
+let letTotal = 0;
+const constTotal = 0;
+
+if (true){
+    var varTotal = 100;
+    let letTotal = 100;
+    const constTotal = 100;
+}
+
+letTotal = letTotal + 1;
+//constTotal = constTotal + 1; //Throws an error!
+
+console.log('varTotal', varTotal); //varTotal is 100
+console.log('letTotal', letTotal); //letTotal is 1
+console.log('constTotal', constTotal); //constTotal is 0
+                    </code>
+                </pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div><h5><b>String Templates</b></h5></div>
+                <pre>
+                    <code>
+    let name = 'John';
+    console.log(`Hello, &#36;{name}`);
+                    </code>
+                </pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div><h5><b>Arrow Functions</b></h5></div>
+                <pre>
+                    <code>
+function oldWayFunction(){
+    //do some work
+}
+
+const arrowFunction = () => {
+    //do some other work
+};
+                    </code>
+                </pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div><h5><b>Spread Syntax</b></h5></div>
+                <p>
+                    Allows for an array expression or an object express to be expanded.
+                </p>
+                <pre>
+                    <code>
+var numbers = [1, 2, 3],
+    newNumbers = Array.of(...numbers);
+
+console.log('New Array: ', newNumbers);
+                    </code>
+                </pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div><h5><b>Destructuring</b></h5></div>
+                <pre>
+                    <code>
+const properties = { firstName: 'FirstName', middleName: 'MiddleName', lastName: 'LastName' };
+const { firstName, lastName } = properties;
+
+console.log('Names: ', firstName, lastName);
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

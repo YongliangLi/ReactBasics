@@ -1,0 +1,30 @@
+.content {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 25px; }
+
+pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px; }
+
+.product-list-item {
+    margin-top:10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px; }
+    .product-list-item a {
+        cursor: pointer; }
+
+.search-wrapper {
+    padding-bottom: 10px; }
+
+.search .form-row {
+    margin-bottom: 15px; }
+
+.new-product {
+    padding: 10px 0; }

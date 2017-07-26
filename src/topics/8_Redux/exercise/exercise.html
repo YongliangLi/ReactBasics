@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+
+    <link rel="manifest" href="/public/manifest.json">
+    <link rel="shortcut icon" href="/public/favicon.ico">
+
+    <title>React w/ Redux</title>
+</head>
+<body>
+<div class="content">
+    <div class="row">
+        <div class="col-md-5 col-md-offset-4">
+            <b>Note:</b>
+            <ul>
+                <li>
+                    I've brought this exercise back a little to where we are not showing the Search Component, the Product Details,
+                    nor the one second incremental count. The Product Summary List is still present along with the Add to Cart
+                    button associated with it.
+                </li>
+            </ul>
+
+            <b>Task:</b>
+            <ul>
+                <li>
+                    Use Redux (<a href="http://redux.js.org/docs/introduction/" target="_blank">http://redux.js.org/docs/introduction/</a>)
+                    to manage the filtering and display of products based upon category. Do not worry about the Add to Cart
+                    button at this time (hide it if necessary).
+                </li>
+                <li>
+                    To get us to a more React/Redux implementation, generate Presentation Components by creating new
+                    components or refactoring existing components.
+                </li>
+                <li>
+                    I've gone ahead and defined your actions (/exercise/actions/index.js). You need to generate your Action Creators.
+                </li>
+                <li>
+                    I've gone ahead and combined your reducers (/exercise/reducers/index.js). You need to build the
+                    products and productFilter reducers.
+                </li>
+                <li>
+                    I've gone ahead and outlined your container (/exercise/containers). You need to finish them out.
+                </li>
+                <li>
+                    Once you have completed that, in your exercise.js file you need to create the store and apply the Provider.
+                </li>
+            </ul>
+
+            <b>Bonus:</b>
+            <ul>
+                <li>
+                    Apply the Add to Cart functionality and generate a HeaderContainer to display the Header text and total cart items
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <h3 class="text-center">REACT W/ REDUX</h3>
+        </div>
+    </div>
+    <div id="root"></div>
+</div>
+
+</body>
+</html>
